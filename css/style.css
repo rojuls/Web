@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'English111 Vivace BT';
+    src: url('https://rojuls.github.io/Web/fonts/e111viva.eot');
+    src: url('https://rojuls.github.io/Web/fonts/e111viva.eot?#iefix') format('embedded-opentype'),
+         url('https://rojuls.github.io/Web/fonts/e111viva.woff2') format('woff2'),
+         url('https://rojuls.github.io/Web/fonts/e111viva.woff') format('woff'),
+         url('https://rojuls.github.io/Web/fonts/e111viva.ttf')  format('truetype'),
+         url('https://berandawedding.co.id/fonts/e111viva.svg#English111 Vivace BT') format('svg');
+}
