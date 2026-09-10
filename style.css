@@ -1,0 +1,65 @@
+/* ===== 1. WDS ELEMENTOR - FITUR UNDANGAN ===== */
+/* Sumber: https://walimatul.id/wp-content/plugins/weddingsaas-pro/assets/css/wds-elementor.css */
+.wds-countdown{display:flex;gap:10px;justify-content:center;align-items:center;margin:20px 0}
+.wds-countdown-item{text-align:center;padding:12px 16px;border-radius:12px;background:rgba(255,255,255,.15);backdrop-filter:blur(10px);min-width:70px}
+.wds-countdown-number{font-size:32px;font-weight:700;line-height:1}
+.wds-countdown-label{font-size:12px;text-transform:uppercase;letter-spacing:1px}
+.wds-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0}
+.wds-gallery img{width:100%;height:200px;object-fit:cover;border-radius:8px}
+.wds-rsvp-form{max-width:500px;margin:20px auto}
+.wds-rsvp-form input,.wds-rsvp-form textarea,.wds-rsvp-form select{width:100%;padding:12px;margin-bottom:12px;border:1px solid #ddd;border-radius:8px;font-family:inherit;font-size:14px}
+.wds-rsvp-form button{width:100%;padding:14px;background:#bfa16a;color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer}
+.wds-amplop-box{text-align:center;padding:20px;border:2px dashed #bfa16a;border-radius:16px;margin:20px 0;background:rgba(191,161,106,.05)}
+.wds-music-toggle{position:fixed;bottom:20px;right:20px;z-index:9999;width:50px;height:50px;border-radius:50%;background:#bfa16a;color:#fff;border:none;cursor:pointer}
+
+/* ===== 2. POST-4714 - SETTING HALAMAN ===== */
+/* Sumber: https://walimatul.id/wp-content/uploads/elementor/css/post-4714.css */
+.elementor-4714 .elementor-element{margin:0;padding:0}
+.elementor-4714 .elementor-heading-title{font-family:'Cormorant Garamond',serif;font-weight:600}
+.elementor-4714 .elementor-widget-container{transition:.3s}
+.elementor-4714 .elementor-section{padding:80px 20px}
+body.elementor-4714{background:#fff;color:#333}
+.elementor-4714 .elementor-button{background:#bfa16a;border-radius:50px;padding:12px 30px}
+
+/* ===== 3. INLINE - BACKGROUND & DESAIN KAMU ===== */
+.undangan .elementor-element.elementor-element-7448ac9:not(.elementor-motion-effects-element-type-background), 
+.undangan .elementor-element.elementor-element-7448ac9 > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+    background-image:url("https://walimatul.id/wp-content/uploads/2026/04/Garden-Series-17-1.webp");
+    background-position:center center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+.undangan .elementor-element.elementor-element-5e3817f7:not(.elementor-motion-effects-element-type-background), 
+.undangan .elementor-element.elementor-element-5e3817f7 > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+    background-image:url("https://image.idntimes.com/post/20210710/6-542f29f25d3bfd1bcf57c5323d8e470f.jpg");
+    background-position:center center;
+    background-size:cover;
+}
+.undangan .elementor-element.elementor-element-7f7dae5d:not(.elementor-motion-effects-element-type-background), 
+.undangan .elementor-element.elementor-element-7f7dae5d > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+    background-image:url("https://image.idntimes.com/post/20210710/6-542f29f25d3bfd1bcf57c5323d8e470f.jpg");
+    background-position:center center;
+    background-size:cover;
+}
+.undangan .elementor-element.elementor-element-1ee28297:not(.elementor-motion-effects-element-type-background), 
+.undangan .elementor-element.elementor-element-1ee28297 > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRELZDwyqSBoy65MCtlQY1lhwVMDW2E7NCTWyWPQESfkuN0bFI1zC37rCc&s=10");
+    background-position:center center;
+    background-size:cover;
+}
+.undangan .elementor-element.elementor-element-3db851c0:not(.elementor-motion-effects-element-type-background), 
+.undangan .elementor-element.elementor-element-3db851c0 > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+    background-image:url("https://i.pinimg.com/736x/da/12/bd/da12bdc7a2c633c1fda8ca59fceb5605.jpg");
+    background-position:center center;
+    background-size:cover;
+}
+.undangan .elementor-element.elementor-element-660b8fbf::before, 
+.undangan .elementor-element.elementor-element-660b8fbf > .elementor-background-video-container::before, 
+.undangan .elementor-element.elementor-element-660b8fbf > .e-con-inner > .elementor-background-video-container::before, 
+.undangan .elementor-element.elementor-element-660b8fbf > .elementor-background-slideshow::before, 
+.undangan .elementor-element.elementor-element-660b8fbf > .e-con-inner > .elementor-background-slideshow::before, 
+.undangan .elementor-element.elementor-element-660b8fbf > .elementor-motion-effects-container > .elementor-motion-effects-layer::before{
+    background-image:url("https://awsimages.detik.net.id/community/media/visual/2023/06/12/baju-pernikahan-kocak-3.jpeg?w=600&q=90");
+    background-position:center center;
+    background-size:cover;
+}
