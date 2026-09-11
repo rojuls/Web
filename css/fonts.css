@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Brigesta';
-    src: url('https://rojuls.github.io/Web/brigesta-regular-400.eot');
-    src: url('https://rojuls.github.io/Webbrigesta-regular-400.eot?#iefix') format('embedded-opentype'),
-         url('https://rojuls.github.io/Web/brigesta-regular-400.woff2') format('woff2'),
-         url('https://rojuls.github.io/Web/brigesta-regular-400.woff') format('woff'),
-         url('https://rojuls.github.io/Web/brigesta-regular-400.ttf')  format('truetype'),
-         url('https://rojuls.github.io/Web/brigesta-regular-400.svg#Brigesta') format('svg');
+    src: url('https://rojuls.github.io/Web/fonts/brigesta-regular-400.eot');
+    src: url('https://rojuls.github.io/Web/fonts/brigesta-regular-400.eot?#iefix') format('embedded-opentype'),
+         url('https://rojuls.github.io/Web/fonts/brigesta-regular-400.woff2') format('woff2'),
+         url('https://rojuls.github.io/Web/fonts/brigesta-regular-400.woff') format('woff'),
+         url('https://rojuls.github.io/Web/fonts/brigesta-regular-400.ttf')  format('truetype'),
+         url('https://rojuls.github.io/Web/fonts/brigesta-regular-400.svg#Brigesta') format('svg');
 }
