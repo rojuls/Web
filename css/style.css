@@ -1,53 +1,43 @@
-/* 1. DAFTARIN FONT DULU */
+/* DAFTAR FONT */
 @font-face {
     font-family: 'English111 Vivace BT';
-    src: url('fonts/e111viva.woff2') format('woff2'),
-         url('fonts/e111viva.woff') format('woff'),
-         url('fonts/e111viva.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+    src: url('fonts/e111viva.woff2') format('woff2');
 }
-
 @font-face {
     font-family: 'Brigesta';
-    src: url('fonts/brigesta-regular-400.woff2') format('woff2'),
-         url('fonts/brigesta-regular-400.woff') format('woff');
+    src: url('fonts/brigesta-regular-400.woff') format('woff');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap');
-
-/* 2. TIMPA STYLE ELEMENTOR */
-body {
-    background-color: #FFF1DB; /* krem kayak di foto */
-    font-family: 'Cormorant Garamond', serif;
+/* BACKGROUND */
+body, .workspace {
+    background: #FFF1DB !important;
 }
 
-.font-photograph-signature {
-    font-family: 'English111 Vivace BT' !important; /* INI FONT "ARISTA" */
+/* FONT NAMA - PALING KUAT */
+.workspace .font-photograph-signature {
+    font-family: 'English111 Vivace BT', cursive !important;
     font-size: 60px !important;
-    color: #8B4513 !important; /* coklat chestnut */
-    line-height: 1;
+    color: #8B4513 !important;
 }
 
-.font-accent {
-    font-family: 'Brigesta' !important; /* INI FONT NAMA LENGKAP */
+.workspace .font-accent {
+    font-family: 'Brigesta', serif !important;
     font-size: 40px !important;
     color: #8B4513 !important;
-    font-weight: 400 !important;
 }
 
-.color-accent {
+.workspace .color-accent {
     color: #8B4513 !important;
 }
 
-/* 3. BENERIN FOTO OVAL + BORDER */
+/* FOTO OVAL */
 .image-editable {
     border: 3px solid #8B4513 !important;
     border-radius: 250px 250px 0 0 !important;
 }
 
-/* 4. TOMBOL IG */
-.btn-primary {
+/* HANYA TOMBOL IG YANG ADA LOGO */
+a[href*="instagram.com"].btn-primary {
     background: #8B4513 !important;
     background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png') !important;
     background-size: 16px !important;
@@ -55,5 +45,12 @@ body {
     background-position: 12px center !important;
     padding-left: 35px !important;
     color: white !important;
+}
+
+/* TOMBOL BIASA TANPA LOGO */
+.btn-primary {
+    background: #8B4513 !important;
+    color: white !important;
+    border-radius: 30px !important;
     border: none !important;
 }
