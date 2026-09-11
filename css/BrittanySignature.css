@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Brittany Signature';
+    src: url('https://rojuls.github.io/Web/css/BrittanySignature.eot');
+    src: url('https://rojuls.github.io/Web/css/BrittanySignature.eot?#iefix') format('embedded-opentype'),
+         url('https://rojuls.github.io/Web/css/BrittanySignature.woff2') format('woff2'),
+         url('https://rojuls.github.io/Web/css/BrittanySignature.woff') format('woff'),
+         url('BrittanySignature.ttf')  format('truetype'),
+         url('https://berandawedding.co.id/fonts/brittany_signature/BrittanySignature.svg#Brittany Signature') format('svg');
+}
