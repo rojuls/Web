@@ -1,56 +1,102 @@
-/* DAFTAR FONT */
+/* ================= FONT ================= */
 @font-face {
     font-family: 'English111 Vivace BT';
-    src: url('fonts/e111viva.woff2') format('woff2');
+    src: url('fonts/e111viva.woff2') format('woff2'),
+         url('fonts/e111viva.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Brigesta';
     src: url('fonts/brigesta-regular-400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-/* BACKGROUND */
-body, .workspace {
-    background: #FFF1DB !important;
+/* ================= BODY & BACKGROUND ================= */
+body, .workspace, .content {
+    background: #FFF1DB !important; /* krem chestnut */
+    font-family: 'Cormorant Garamond', serif;
+    color: #333;
 }
 
-/* FONT NAMA - PALING KUAT */
+/* ================= SECTION MEMPELAI ================= */
+/* NAMA KALIGRAFI "Arista" "Andra" */
 .workspace .font-photograph-signature {
     font-family: 'English111 Vivace BT', cursive !important;
     font-size: 60px !important;
-    color: #8B4513 !important;
+    color: #8B4513 !important; /* coklat */
+    line-height: 1.1 !important;
+    margin-bottom: 5px !important;
 }
 
+/* NAMA LENGKAP */
 .workspace .font-accent {
     font-family: 'Brigesta', serif !important;
     font-size: 40px !important;
     color: #8B4513 !important;
+    font-weight: 400 !important;
+    margin-bottom: 10px !important;
 }
 
+/* WARNA AKSEL */
 .workspace .color-accent {
     color: #8B4513 !important;
 }
 
 /* FOTO OVAL */
-.image-editable {
+.workspace .image-editable {
     border: 3px solid #8B4513 !important;
     border-radius: 250px 250px 0 0 !important;
+    overflow: hidden !important;
 }
 
-/* HANYA TOMBOL IG YANG ADA LOGO */
-a[href*="instagram.com"].btn-primary {
+/* ================= SECTION ACARA / TANGGAL ================= */
+/* "Akad Nikah" */
+.workspace .editable:contains("Akad") {
+    font-family: 'English111 Vivace BT', cursive !important;
+    font-size: 32px !important;
+    color: #A0522D !important;
+}
+
+/* "Minggu, 25 Mei 2025" - YANG GEDE BANGET ITU */
+.workspace h2, 
+.workspace div[style*="font-size:40px"],
+.workspace div[style*="font-size:50px"],
+.workspace div[style*="font-size:60px"] {
+    font-size: 28px !important; /* DIKECILIN */
+    line-height: 1.2 !important;
+    color: #8B4513 !important;
+    font-family: 'Brigesta', serif !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+
+/* ================= TOMBOL ================= */
+/* TOMBOL BIASA: Open Invitation, Open Google Maps */
+.workspace .btn-primary {
+    background: #8B4513 !important;
+    color: white !important;
+    border-radius: 30px !important;
+    border: none !important;
+    padding: 10px 25px !important;
+    font-size: 14px !important;
+}
+
+/* KHUS TOMBOL INSTAGRAM DOANG ADA LOGO */
+.workspace a[href*="instagram.com"].btn-primary {
     background: #8B4513 !important;
     background-image: url('https://cdn-icons-png.flaticon.com/512/174/174855.png') !important;
     background-size: 16px !important;
     background-repeat: no-repeat !important;
     background-position: 12px center !important;
-    padding-left: 35px !important;
+    padding-left: 38px !important;
     color: white !important;
 }
 
-/* TOMBOL BIASA TANPA LOGO */
-.btn-primary {
-    background: #8B4513 !important;
-    color: white !important;
-    border-radius: 30px !important;
-    border: none !important;
+/* ================= LAIN-LAIN ================= */
+.text-center {
+    text-align: center !important;
 }
