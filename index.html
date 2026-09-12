@@ -711,13 +711,15 @@ animation: wave-right 4s ease-in-out infinite alternate;
         </div>
     </div>
     <!-- not support modal -->
+<!-- 1. jQuery WAJIB PALING ATAS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- start script -->
-      <script src="js/theme-app-custom.js"></script>
-<script src="js/custom-fix.js"></script> <!-- taruh setelahnya -->
+<!-- 2. PAKE YANG CUSTOM, BUKAN YANG ASLI -->
+<script src="js/theme-app-custom.js"></script>
 
-    
-    <script src="https://rojuls.github.io/Web/js/themes-scroll.js?v=260626"></script>
+<!-- 3. Script scroll -->
+<script src="js/themes-scroll.js"></script>
+   
 
     <script>
         var notSupport = document.getElementById('notSupport');
@@ -733,8 +735,23 @@ animation: wave-right 4s ease-in-out infinite alternate;
     </script>
         <!-- end script -->
     <script>
-        
-    </script>
+// NUKLIR: Paksa loading ilang 1.5 detik tanpa peduli error
+window.addEventListener('load', function() {
+    setTimeout(function(){
+        document.querySelector('.preloader').style.display = 'none';
+        document.body.style.overflow = 'auto';
+        document.documentElement.style.overflow = 'auto';
+    }, 1500);
+});
+
+// Tombol open langsung scroll
+document.addEventListener('click', function(e){
+    if(e.target.classList.contains('btn-open-invitation')){
+        e.preventDefault();
+        document.getElementById('content').scrollIntoView({behavior: 'smooth'});
+    }
+});
+</script>
 </body>
 
 </html>
