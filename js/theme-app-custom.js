@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
 
     // ===== 4. COUNTDOWN =====
     function countdown() {
-        let weddingDate = new Date("2025-05-25 08:00:00").getTime(); // GANTI TANGGAL KAMU
+        let weddingDate = new Date("2026-12-25 08:00:00").getTime(); // GANTI TANGGAL KAMU
         let now = new Date().getTime();
         let distance = weddingDate - now;
 
