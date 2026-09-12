@@ -710,49 +710,43 @@ animation: wave-right 4s ease-in-out infinite alternate;
             </div>
         </div>
     </div>
-    <!-- not support modal -->
-<!-- 1. jQuery WAJIB PALING ATAS -->
+  
+<!-- 1. jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- 2. PAKE YANG CUSTOM -->
-<script src="js/theme-app-custom.js?v=120926"></script>
+<!-- 2. HAPUS DULU theme-app-custom.js SEMENTARA -->
+<!-- <script src="js/theme-app-custom.js"></script> -->
 
 <!-- 3. Script scroll -->
 <script src="js/themes-scroll.js"></script>
    
 <script>
-    var notSupport = document.getElementById('notSupport');
-    function checkBrowser() { 
-        // 1. Ambil loader dulu
-        let loader = document.querySelector('.preloader'); 
-
-        if(navigator.userAgent.indexOf("UCBrowser") != -1 || navigator.userAgent.indexOf("MiuiBrowser") != -1 || navigator.userAgent.indexOf("OppoBrowser") != -1) {
-            showModal(notSupport);
-            if (loader) {
-                loader.style.display = "none"; // ini baru aman
-            }
-        }
-    }
-    checkBrowser()
-</script>
-<!-- end script -->
-
-<script>
-// NUKLIR: Paksa loading ilang 1.5 detik tanpa peduli error
-window.addEventListener('load', function() {
+// NUKLIR TOTAL V2
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // 1. Paksa ilangin loading 1 detik
     setTimeout(function(){
-        let loader = document.querySelector('.preloader'); // ambil lagi
+        let loader = document.querySelector('.preloader');
         if(loader) loader.style.display = 'none';
         document.body.style.overflow = 'auto';
-        document.documentElement.style.overflow = 'auto';
-    }, 1500);
-});
+    }, 1000);
 
-// Tombol open langsung scroll
-document.addEventListener('click', function(e){
-    if(e.target.classList.contains('btn-open-invitation')){
-        e.preventDefault();
-        document.getElementById('content').scrollIntoView({behavior: 'smooth'});
+    // 2. Tombol buka undangan
+    document.addEventListener('click', function(e){
+        if(e.target.classList.contains('btn-open-invitation') || e.target.closest('.btn-open-invitation')){
+            e.preventDefault();
+            let content = document.getElementById('content');
+            if(content) content.scrollIntoView({behavior: 'smooth'});
+            if(loader) loader.style.display = 'none';
+        }
+    });
+
+    // 3. Anti browser jelek
+    var notSupport = document.getElementById('notSupport');
+    if(navigator.userAgent.indexOf("UCBrowser") != -1 || navigator.userAgent.indexOf("MiuiBrowser") != -1) {
+        if(typeof showModal === "function") showModal(notSupport);
+        let loader = document.querySelector('.preloader');
+        if(loader) loader.style.display = "none";
     }
 });
 </script>
