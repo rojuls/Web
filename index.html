@@ -714,31 +714,35 @@ animation: wave-right 4s ease-in-out infinite alternate;
 <!-- 1. jQuery WAJIB PALING ATAS -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- 2. PAKE YANG CUSTOM, BUKAN YANG ASLI -->
-<script src="js/theme-app-custom.js"></script>
+<!-- 2. PAKE YANG CUSTOM -->
+<script src="js/theme-app-custom.js?v=120926"></script>
 
 <!-- 3. Script scroll -->
 <script src="js/themes-scroll.js"></script>
    
+<script>
+    var notSupport = document.getElementById('notSupport');
+    function checkBrowser() { 
+        // 1. Ambil loader dulu
+        let loader = document.querySelector('.preloader'); 
 
-    <script>
-        var notSupport = document.getElementById('notSupport');
-        function checkBrowser() { 
-            if(navigator.userAgent.indexOf("UCBrowser") != -1 || navigator.userAgent.indexOf("MiuiBrowser") != -1 || navigator.userAgent.indexOf("OppoBrowser") != -1) {
-                showModal(notSupport);
-                if (loader) {
-                    loader.style.display = "none";
-                }
+        if(navigator.userAgent.indexOf("UCBrowser") != -1 || navigator.userAgent.indexOf("MiuiBrowser") != -1 || navigator.userAgent.indexOf("OppoBrowser") != -1) {
+            showModal(notSupport);
+            if (loader) {
+                loader.style.display = "none"; // ini baru aman
             }
         }
-        checkBrowser()
-    </script>
-        <!-- end script -->
-    <script>
+    }
+    checkBrowser()
+</script>
+<!-- end script -->
+
+<script>
 // NUKLIR: Paksa loading ilang 1.5 detik tanpa peduli error
 window.addEventListener('load', function() {
     setTimeout(function(){
-        document.querySelector('.preloader').style.display = 'none';
+        let loader = document.querySelector('.preloader'); // ambil lagi
+        if(loader) loader.style.display = 'none';
         document.body.style.overflow = 'auto';
         document.documentElement.style.overflow = 'auto';
     }, 1500);
